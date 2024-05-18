@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-primary text-[22px] text-primary;
+}
+
+a {
+    @apply text-[16px] text-black transition-all duration-300 lg:text-navLink-text lg:hover:text-navLink-hover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-primary text-primary;
+}
+
+.h1 {
+    @apply text-[24px] font-semibold -tracking-[1.3px] text-hero-title sm:text-[35px] md:text-[40px] lg:text-[47px] xl:text-[52px];
+}
+
+.is-open-nav {
+    @apply h-[325px];
+}
+
+.gradient {
+    background: linear-gradient(91deg, #02141b 58.67%, #e96c12 102.91%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.deep-focus-gradient {
+    background: linear-gradient(269deg, #e96c12 10%, #fff 100.83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delivered-result-gradient {
+    background: linear-gradient(91deg, #fff 10.74%, #e96c12 100.45%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.positive-value-gradient {
+    background: linear-gradient(91deg, #cbd5da 4.05%, #e96c12 92.91%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.component-value {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.title-value-gradient {
+    background: linear-gradient(91deg, #fff 1.04%, #e96c12 98.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.swiper-slide {
+    background-color: white;
+    opacity: 0.3;
+    height: fit-content;
+    border-radius: 20px;
+    transition: all;
+    animation-duration: 300ms;
+
+    &.swiper-slide-next,
+    &.swiper-slide-prev {
+        background-color: white;
+        opacity: 0.5;
+    }
+
+    &.swiper-slide-active {
+        background-color: white;
+        opacity: 1;
+    }
+}
+.swiper-pagination-bullet-active {
+    background-color: #469bb7;
+}
+.splide__pagination {
+    display: none;
+}
+
+.splide__track {
+    overflow: visible;
+}
+
+/* .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-container .swiper-wrapper {
+    width: 20000px;
+}
+
+.swiper-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    background-color: white;
+} */
