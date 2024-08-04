@@ -1,1097 +1,1165 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asia Leap</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Asia Leap</title>
 
-    <!-- FAVICON -->
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon.png"
-      type="image/x-icon"
-    />
+        <!-- FAVICON -->
+        <link
+            rel="shortcut icon"
+            href="../assets/favicon.png"
+            type="image/x-icon"
+        />
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+        <!-- SWIPER CSS -->
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="../css/splide.min.css" />
+        <link rel="stylesheet" href="../css/splide.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./output.css" />
-  </head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./output.css" />
+    </head>
 
-  <body class="bg-white">
-    <!-- Header -->
-    <header
-      class="sticky top-0 z-50 h-[80px] bg-[#122933] p-0 shadow-xl lg:bg-[#011C28]"
-    >
-      <div
-        class="container mx-auto flex h-full items-center justify-between p-4 xl:p-0"
-      >
-        <!-- Logo -->
-        <a href="#">
-          <img
-            src="../assets/component/main-logo.png"
-            class="h-[42px] lg:h-[52px]"
-            alt=""
-          />
-        </a>
-
-        <!-- Nav -->
-        <nav>
-          <!-- Nav Mobile Trigger -->
-          <div class="cursor-pointer lg:hidden" id="nav_trigger_button">
-            <img
-              id="nav_trigger_image"
-              src="../assets/component/button.png"
-              class="h-[48px] w-[48px]"
-              alt=""
-            />
-          </div>
-          <ul
-            id="nav_menu"
-            class="fixed right-0 top-[80px] mr-[20px] flex h-0 w-[200px] flex-col overflow-hidden rounded-xl bg-[#E7EEF2] transition-all duration-300 lg:relative lg:top-0 lg:mr-[30px] lg:h-full lg:w-full lg:flex-row lg:gap-[40px] lg:bg-[#011C28] lg:p-0"
-          >
-            <li
-              class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
-            >
-              <a href="#home">HOME</a>
-            </li>
-            <li
-              class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
-            >
-              <a href="#about_us">ABOUT</a>
-            </li>
-            <li
-              class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
-            >
-              <a href="#our_work">OUR WORK</a>
-            </li>
-            <li
-              class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
-            >
-              <a href="#article_event">ARTICLE & EVENT</a>
-            </li>
-            <li
-              class="cursor-pointer bg-[#E96C12] px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:hidden lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
-            >
-              <a href="mailto:projectcentre@asia-leap.com" class="text-white"
-                >Contact us</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div
-          id="redirect_aboutus"
-          class="hidden cursor-pointer transition-all duration-200 hover:bg-opacity-85 lg:flex lg:h-[44px] lg:w-[186px] lg:items-center lg:justify-center lg:rounded-md lg:bg-[#E96C12] lg:text-[16px] lg:font-semibold lg:text-[#fff]"
+    <body class="bg-white">
+        <!-- Header -->
+        <header
+            class="sticky top-0 z-50 h-[80px] bg-[#122933] p-0 shadow-xl lg:bg-[#011C28]"
         >
-          Contact us
-        </div>
+            <div
+                class="container mx-auto flex h-full items-center justify-between p-4 xl:p-0"
+            >
+                <!-- Logo -->
+                <a href="#">
+                    <img
+                        src="../assets/component/main-logo.png"
+                        class="h-[42px] lg:h-[52px]"
+                        alt=""
+                    />
+                </a>
 
-        <!-- Link Button -->
-      </div>
-    </header>
+                <!-- Nav -->
+                <nav>
+                    <!-- Nav Mobile Trigger -->
+                    <div
+                        class="cursor-pointer lg:hidden"
+                        id="nav_trigger_button"
+                    >
+                        <img
+                            id="nav_trigger_image"
+                            src="../assets/component/button.png"
+                            class="h-[48px] w-[48px]"
+                            alt=""
+                        />
+                    </div>
+                    <ul
+                        id="nav_menu"
+                        class="fixed right-0 top-[80px] mr-[20px] flex h-0 w-[200px] flex-col overflow-hidden rounded-xl bg-[#E7EEF2] transition-all duration-300 lg:relative lg:top-0 lg:mr-[30px] lg:h-full lg:w-full lg:flex-row lg:gap-[40px] lg:bg-[#011C28] lg:p-0"
+                    >
+                        <li
+                            class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
+                        >
+                            <a href="#home">HOME</a>
+                        </li>
+                        <li
+                            class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
+                        >
+                            <a href="#about_us">ABOUT</a>
+                        </li>
+                        <li
+                            class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
+                        >
+                            <a href="#our_work">OUR WORK</a>
+                        </li>
+                        <li
+                            class="cursor-pointer px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
+                        >
+                            <a href="#article_event">ARTICLE & EVENT</a>
+                        </li>
+                        <li
+                            class="cursor-pointer bg-[#E96C12] px-[12px] py-[16px] text-center duration-300 hover:bg-[#B8CBD3] lg:hidden lg:flex-none lg:p-0 lg:hover:bg-[#011C28]"
+                        >
+                            <a
+                                href="mailto:projectcentre@asia-leap.com"
+                                class="text-white"
+                                >Contact us</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div
+                    id="redirect_aboutus"
+                    class="hidden cursor-pointer transition-all duration-200 hover:bg-opacity-85 lg:flex lg:h-[44px] lg:w-[186px] lg:items-center lg:justify-center lg:rounded-md lg:bg-[#E96C12] lg:text-[16px] lg:font-semibold lg:text-[#fff]"
+                >
+                    Contact us
+                </div>
 
-    <!-- Page Wrapper -->
-    <main class="mx-auto max-w-full overflow-hidden bg-[#E7EEF2]">
-      <!-- Grid Repeat Y-->
-      <div
-        class="fixed bottom-0 left-0 right-0 top-0 z-[1px] shrink bg-gridDark bg-contain bg-center bg-repeat-y lg:bg-auto"
-      ></div>
+                <!-- Link Button -->
+            </div>
+        </header>
 
-      <!-- Section: Hero -->
-      <section
-        id="home"
-        class="hero relative z-10 flex h-[476px] items-center justify-center bg-backgroundHero bg-cover bg-center bg-no-repeat lg:h-[749px] lg:bg-cover"
-      >
-        <div
-          class="hero__text container mx-auto flex flex-col items-center justify-center gap-3"
-        >
-          <h1 class="h1 text-wrap text-center capitalize">
-            Leaping across Asia <br class="md:block" />
-            From potential to
-            <br class="block md:hidden" />
-            peak performance
-          </h1>
-          <p
-            class="w-[260px] text-wrap text-center text-[16px] text-hero-subTitle md:w-[600px] md:text-[18px] lg:w-[869px] lg:text-[20px] lg:font-normal xl:text-[24px]"
-          >
-            For 18 years Asia Leap has been fulfilling the business and talent
-            needs of organizations with our consulting capabilities.
-          </p>
-        </div>
+        <!-- Page Wrapper -->
+        <main class="mx-auto max-w-full overflow-hidden bg-[#E7EEF2]">
+            <!-- Grid Repeat Y-->
+            <div
+                class="fixed bottom-0 left-0 right-0 top-0 z-[1px] shrink bg-gridDark bg-contain bg-center bg-repeat-y lg:bg-auto"
+            ></div>
 
-        <!-- <div
+            <!-- Section: Hero -->
+            <section
+                id="home"
+                class="hero relative z-10 flex h-[476px] items-center justify-center bg-backgroundHero bg-cover bg-center bg-no-repeat lg:h-[749px] lg:bg-cover"
+            >
+                <div
+                    class="hero__text container mx-auto flex flex-col items-center justify-center gap-3"
+                >
+                    <h1 class="h1 text-wrap text-center capitalize">
+                        Leaping across Asia <br class="md:block" />
+                        From potential to
+                        <br class="block md:hidden" />
+                        peak performance
+                    </h1>
+                    <p
+                        class="w-[260px] text-wrap text-center text-[16px] text-hero-subTitle md:w-[600px] md:text-[18px] lg:w-[869px] lg:text-[20px] lg:font-normal xl:text-[24px]"
+                    >
+                        For 18 years Asia Leap has been fulfilling the business
+                        and talent needs of organizations with our consulting
+                        capabilities.
+                    </p>
+                </div>
+
+                <!-- <div
                     class="absolute bottom-0 h-[130px] w-full shrink bg-charHeroSmall bg-repeat-x sm:h-[200px] sm:bg-chartHero lg:h-[240px]"
                 ></div> -->
-      </section>
+            </section>
 
-      <!-- Section: Why us -->
-      <section class="whyus mb-[40px] xl:mb-[80px]" id="about_us">
-        <div class="container mx-auto p-4 xl:p-0">
-          <!-- Title -->
-          <div
-            class="mb-[40px] mt-[40px] flex flex-col items-center justify-center gap-3 xl:mb-[60px] xl:mt-[80px] xl:gap-5"
-          >
-            <img
-              src="../assets/section-whyus/dot.png"
-              class="h-[17px] w-[17px]"
-              alt=""
-            />
-            <h2 class="text-[16px] font-semibold uppercase xl:text-[28px]">
-              Why us
-            </h2>
-          </div>
-          <!-- Grid Items -->
-          <div
-            class="flex flex-col gap-3 p-0 xl:flex-row xl:justify-between xl:gap-0"
-          >
-            <!-- Why us 1 -->
-            <div
-              class="group z-40 mx-auto flex w-full flex-col items-center justify-center gap-[20px] rounded-xl bg-[#AEC3CE] px-[40px] py-[32px] transition-all duration-300 hover:bg-[#011C28] xl:h-[400px] xl:w-full xl:rounded-r-none xl:pb-[60px] xl:pt-[40px]"
-            >
-              <img
-                src="../assets/section-whyus/whyus1.png"
-                class="mb-[20px] h-[80px] w-[80px] xl:mt-[20px]"
-                alt=""
-              />
-              <p
-                class="text-balance text-center text-[18px] text-black group-hover:text-white"
-              >
-                Be it about business or talents, Asia Leap has delivered
-                positive impact for organizations on wide ranging projects.
-              </p>
-            </div>
-            <!-- Why us 2 -->
-            <!-- Hover: bg-[#011C28] text-white -->
-            <div
-              class="group z-40 mx-auto flex h-[272px] w-full flex-col items-center justify-center gap-[20px] rounded-xl bg-[#AEC3CE] px-[40px] py-[32px] transition-all duration-300 hover:bg-[#011c28] xl:h-[400px] xl:w-full xl:rounded-none xl:pb-[60px] xl:pt-[40px]"
-            >
-              <img
-                src="../assets/section-whyus/whyus2.png"
-                class="mb-[20px] h-[80px] w-[80px]"
-                alt=""
-              />
-              <p
-                class="text-center text-[18px] text-black group-hover:text-white"
-              >
-                An agile mindset, coupled with our collective experience across
-                major corporate functions
-              </p>
-            </div>
-            <!-- Why us 3 -->
-            <div
-              class="group z-40 mx-auto flex h-[272px] w-full flex-col items-center justify-center gap-[20px] rounded-xl bg-[#AEC3CE] px-[40px] py-[32px] hover:bg-[#011c28] xl:h-[400px] xl:w-full xl:rounded-l-none xl:pb-[60px] xl:pt-[40px]"
-            >
-              <img
-                src="../assets/section-whyus/whyus3.png"
-                class="mb-[20px] h-[80px] w-[80px]"
-                alt=""
-              />
-              <p
-                class="text-center text-[18px] text-black group-hover:text-white"
-              >
-                Knowledge of Asia connections, fuels our ability to deliver the
-                intended results.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Section: Why us -->
+            <section class="whyus mb-[40px] xl:mb-[80px]" id="about_us">
+                <div class="container mx-auto p-4 xl:p-0">
+                    <!-- Title -->
+                    <div
+                        class="mb-[40px] mt-[40px] flex flex-col items-center justify-center gap-3 xl:mb-[60px] xl:mt-[80px] xl:gap-5"
+                    >
+                        <img
+                            src="../assets/section-whyus/dot.png"
+                            class="h-[17px] w-[17px]"
+                            alt=""
+                        />
+                        <h2
+                            class="text-[16px] font-semibold uppercase xl:text-[28px]"
+                        >
+                            Why us
+                        </h2>
+                    </div>
+                    <!-- Grid Items -->
+                    <div
+                        class="flex flex-col gap-3 p-0 xl:flex-row xl:justify-between xl:gap-0"
+                    >
+                        <!-- Why us 1 -->
+                        <div
+                            class="group z-40 mx-auto flex w-full flex-col items-center justify-center gap-[20px] rounded-xl bg-[#AEC3CE] px-[40px] py-[32px] transition-all duration-300 hover:bg-[#011C28] xl:h-[400px] xl:w-full xl:rounded-r-none xl:pb-[60px] xl:pt-[40px]"
+                        >
+                            <img
+                                src="../assets/section-whyus/whyus1.png"
+                                class="mb-[20px] h-[80px] w-[80px] xl:mt-[20px]"
+                                alt=""
+                            />
+                            <p
+                                class="text-balance text-center text-[18px] text-black group-hover:text-white"
+                            >
+                                Be it about business or talents, Asia Leap has
+                                delivered positive impact for organizations on
+                                wide ranging projects.
+                            </p>
+                        </div>
+                        <!-- Why us 2 -->
+                        <!-- Hover: bg-[#011C28] text-white -->
+                        <div
+                            class="group z-40 mx-auto flex h-[272px] w-full flex-col items-center justify-center gap-[20px] rounded-xl bg-[#AEC3CE] px-[40px] py-[32px] transition-all duration-300 hover:bg-[#011c28] xl:h-[400px] xl:w-full xl:rounded-none xl:pb-[60px] xl:pt-[40px]"
+                        >
+                            <img
+                                src="../assets/section-whyus/whyus2.png"
+                                class="mb-[20px] h-[80px] w-[80px]"
+                                alt=""
+                            />
+                            <p
+                                class="text-center text-[18px] text-black group-hover:text-white"
+                            >
+                                An agile mindset, coupled with our collective
+                                experience across major corporate functions
+                            </p>
+                        </div>
+                        <!-- Why us 3 -->
+                        <div
+                            class="group z-40 mx-auto flex h-[272px] w-full flex-col items-center justify-center gap-[20px] rounded-xl bg-[#AEC3CE] px-[40px] py-[32px] hover:bg-[#011c28] xl:h-[400px] xl:w-full xl:rounded-l-none xl:pb-[60px] xl:pt-[40px]"
+                        >
+                            <img
+                                src="../assets/section-whyus/whyus3.png"
+                                class="mb-[20px] h-[80px] w-[80px]"
+                                alt=""
+                            />
+                            <p
+                                class="text-center text-[18px] text-black group-hover:text-white"
+                            >
+                                Knowledge of Asia connections, fuels our ability
+                                to deliver the intended results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Section: Solving -->
-      <section class="solving z-40 mb-[80px]">
-        <div class="container mx-auto">
-          <div
-            class="z-40 mx-auto mb-[24px] w-[278px] text-center xl:mb-[60px] xl:w-[854px]"
-          >
-            <h2
-              id="solving__text"
-              class="gradient mt-[40px] text-[20px] font-semibold leading-7 xl:mt-[160px] xl:text-[40px] xl:capitalize xl:leading-[56px]"
+            <!-- Section: Solving -->
+            <section class="solving z-40 mb-[80px]">
+                <div class="container mx-auto">
+                    <div
+                        class="z-40 mx-auto mb-[24px] w-[278px] text-center xl:mb-[60px] xl:w-[854px]"
+                    >
+                        <h2
+                            id="solving__text"
+                            class="gradient mt-[40px] text-[20px] font-semibold leading-7 xl:mt-[160px] xl:text-[40px] xl:capitalize xl:leading-[56px]"
+                        >
+                            Business challenges and talent issues we have been
+                            solving for organizations
+                        </h2>
+                    </div>
+                </div>
+                <!-- Slider -->
+                <div class="px-7 lg:p-0">
+                    <div class="swiper swiper1 h-[280px] lg:h-[332px]">
+                        <div class="swiper-wrapper mx-auto">
+                            <!-- Slides 1-->
+                            <div class="swiper-slide">
+                                <!-- Item -->
+                                <div
+                                    class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
+                                >
+                                    <img
+                                        src="../assets/section-whyus/icon-slide1.png"
+                                        class="mb-[24px] h-[80px] w-[80px]"
+                                        alt=""
+                                    />
+                                    <p class="text-center text-[18px]">
+                                        Project specialist to guide your
+                                        internal team
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Item -->
+                                <div
+                                    class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
+                                >
+                                    <img
+                                        src="../assets/section-whyus/icon-slide2.png"
+                                        class="mb-[24px] h-[80px] w-[80px]"
+                                        alt=""
+                                    />
+                                    <p class="text-center text-[18px]">
+                                        Facilitator to design and facilitate a
+                                        working group session with outcomes
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Item -->
+                                <div
+                                    class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
+                                >
+                                    <img
+                                        src="../assets/section-whyus/icon-slide3.png"
+                                        class="mb-[24px] h-[80px] w-[80px]"
+                                        alt=""
+                                    />
+                                    <p class="text-center text-[18px]">
+                                        Coach to enhance the performance of an
+                                        executive or a team
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Item -->
+                                <div
+                                    class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
+                                >
+                                    <img
+                                        src="../assets/section-whyus/icon-slide4.png"
+                                        class="mb-[24px] h-[80px] w-[80px]"
+                                        alt=""
+                                    />
+                                    <p class="text-center text-[18px]">
+                                        Experienced professional with specific
+                                        expertise for a task
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Item -->
+                                <div
+                                    class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
+                                >
+                                    <img
+                                        src="../assets/section-whyus/icon-slide5.png"
+                                        class="mb-[24px] h-[80px] w-[80px]"
+                                        alt=""
+                                    />
+                                    <p class="text-center text-[18px]">
+                                        Independent advisor to provide an
+                                        “outside-in” & business perspective
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Item -->
+                                <div
+                                    class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
+                                >
+                                    <img
+                                        src="../assets/section-whyus/icon-slide6.png"
+                                        class="mb-[24px] h-[80px] w-[80px]"
+                                        alt=""
+                                    />
+                                    <p class="text-center text-[18px]">
+                                        Cohesive team to execute a defined
+                                        people development project
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination lg:hidden"></div>
+                    </div>
+                </div>
+                <div
+                    class="hidden w-full lg:flex lg:items-center lg:justify-center lg:gap-4"
+                >
+                    <img
+                        id="prev-button"
+                        src="../assets/section-whyus/prev.png"
+                        class="z-10 h-[48px] w-[48px] cursor-pointer"
+                        alt=""
+                    />
+                    <img
+                        id="next-button"
+                        src="../assets/section-whyus/next.png"
+                        class="z-10 h-[48px] w-[48px] cursor-pointer"
+                        alt=""
+                    />
+                </div>
+            </section>
+
+            <!-- Section: Clientele -->
+            <section
+                id="our_work"
+                class="clienttele relative z-10 bg-[#011C28] lg:h-auto lg:bg-grid lg:bg-center"
             >
-              Business challenges and talent issues we have been solving for
-              organizations
-            </h2>
-          </div>
-        </div>
-        <!-- Slider -->
-        <div class="px-7 lg:p-0">
-          <div class="swiper swiper1 h-[280px] lg:h-[332px]">
-            <div class="swiper-wrapper mx-auto">
-              <!-- Slides 1-->
-              <div class="swiper-slide">
-                <!-- Item -->
-                <div
-                  class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
-                >
-                  <img
-                    src="../assets/section-whyus/icon-slide1.png"
-                    class="mb-[24px] h-[80px] w-[80px]"
-                    alt=""
-                  />
-                  <p class="text-center text-[18px]">
-                    Project specialist to guide your internal team
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- Item -->
-                <div
-                  class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
-                >
-                  <img
-                    src="../assets/section-whyus/icon-slide2.png"
-                    class="mb-[24px] h-[80px] w-[80px]"
-                    alt=""
-                  />
-                  <p class="text-center text-[18px]">
-                    Facilitator to design and facilitate a working group session
-                    with outcomes
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- Item -->
-                <div
-                  class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
-                >
-                  <img
-                    src="../assets/section-whyus/icon-slide3.png"
-                    class="mb-[24px] h-[80px] w-[80px]"
-                    alt=""
-                  />
-                  <p class="text-center text-[18px]">
-                    Coach to enhance the performance of an executive or a team
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- Item -->
-                <div
-                  class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
-                >
-                  <img
-                    src="../assets/section-whyus/icon-slide4.png"
-                    class="mb-[24px] h-[80px] w-[80px]"
-                    alt=""
-                  />
-                  <p class="text-center text-[18px]">
-                    Experienced professional with specific expertise for a task
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- Item -->
-                <div
-                  class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
-                >
-                  <img
-                    src="../assets/section-whyus/icon-slide5.png"
-                    class="mb-[24px] h-[80px] w-[80px]"
-                    alt=""
-                  />
-                  <p class="text-center text-[18px]">
-                    Independent advisor to provide an “outside-in” & business
-                    perspective
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- Item -->
-                <div
-                  class="mx-auto flex h-[280px] w-[282px] flex-col items-center justify-center rounded-[20px] bg-white px-[24px] py-[32px] lg:w-[300px]"
-                >
-                  <img
-                    src="../assets/section-whyus/icon-slide6.png"
-                    class="mb-[24px] h-[80px] w-[80px]"
-                    alt=""
-                  />
-                  <p class="text-center text-[18px]">
-                    Cohesive team to execute a defined people development
-                    project
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination lg:hidden"></div>
-          </div>
-        </div>
-        <div
-          class="hidden w-full lg:flex lg:items-center lg:justify-center lg:gap-4"
-        >
-          <img
-            id="prev-button"
-            src="../assets/section-whyus/prev.png"
-            class="z-10 h-[48px] w-[48px] cursor-pointer"
-            alt=""
-          />
-          <img
-            id="next-button"
-            src="../assets/section-whyus/next.png"
-            class="z-10 h-[48px] w-[48px] cursor-pointer"
-            alt=""
-          />
-        </div>
-      </section>
+                <div class="container mx-auto py-[37px] lg:p-0 lg:py-[80px]">
+                    <!-- Title -->
+                    <div
+                        class="mb-[40px] flex flex-col items-center justify-center gap-3 xl:gap-5"
+                    >
+                        <img
+                            src="../assets/section-clientele/dot-light.png"
+                            class="h-[17px] w-[17px]"
+                            alt=""
+                        />
+                        <h2
+                            class="text-[16px] font-semibold uppercase text-white xl:text-[28px]"
+                        >
+                            Clientele Industry Sectors
+                        </h2>
+                    </div>
 
-      <!-- Section: Clientele -->
-      <section
-        id="our_work"
-        class="clienttele relative z-10 bg-[#011C28] lg:h-auto lg:bg-grid lg:bg-center"
-      >
-        <div class="container mx-auto py-[37px] lg:p-0 lg:py-[80px]">
-          <!-- Title -->
-          <div
-            class="mb-[40px] flex flex-col items-center justify-center gap-3 xl:gap-5"
-          >
-            <img
-              src="../assets/section-clientele/dot-light.png"
-              class="h-[17px] w-[17px]"
-              alt=""
-            />
-            <h2
-              class="text-[16px] font-semibold uppercase text-white xl:text-[28px]"
-            >
-              Clientele Industry Sectors
-            </h2>
-          </div>
+                    <!-- Clientele industry -->
+                    <div class="Part_1">
+                        <div
+                            class="flex flex-col lg:flex-row lg:items-baseline"
+                        >
+                            <!-- Head Title -->
+                            <p
+                                class="text-center text-[20px] font-semibold leading-[24px] -tracking-[0.4px] text-[#E7EEF2] lg:w-1/2 lg:text-left lg:text-[48px] lg:leading-[57.6px] lg:-tracking-[0.96px]"
+                            >
+                                Our primary sectors in which we have
+                                <br class="hidden lg:block" />
+                                <span class="deep-focus-gradient"
+                                    >deep focus</span
+                                >
+                                and stellar track records
+                            </p>
+                            <div
+                                class="industry_section_01 mt-[32px] flex w-full flex-col gap-3 lg:w-1/2"
+                            >
+                                <!-- Component 1 -->
+                                <div
+                                    class="industry-component-01 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Industrial Applications & Manufacturing
+                                    </p>
+                                </div>
+                                <!-- Component 2 -->
+                                <div
+                                    class="industry_component_02 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Aviation & Marine
+                                    </p>
+                                </div>
+                                <!-- Component 3 -->
+                                <div
+                                    class="industry_component_03 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Automotive & Transport
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Component -->
+                        <div></div>
+                    </div>
+                    <div class="Part_2 mt-[80px]">
+                        <div
+                            class="mx-auto flex flex-col items-center lg:w-[747px]"
+                        >
+                            <!-- Head Title -->
+                            <p
+                                class="text-[20px] font-semibold leading-[24px] -tracking-[0.4px] text-[#E7EEF2] lg:w-full lg:text-center lg:text-[48px] lg:leading-[57.6px] lg:-tracking-[0.96px]"
+                            >
+                                Other sectors in which we have also
+                                <span class="delivered-result-gradient"
+                                    >delivered results</span
+                                >
+                            </p>
+                            <div
+                                class="mt-[32px] flex w-full flex-col gap-3 lg:w-full"
+                            >
+                                <!-- Component 1 -->
+                                <div
+                                    class="industry_component_04 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Medical & Pharma
+                                    </p>
+                                </div>
+                                <!-- Component 2 -->
+                                <div
+                                    class="industry_component_05 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Tech and Media
+                                    </p>
+                                </div>
+                                <!-- Component 3 -->
+                                <div
+                                    class="industry_component_06 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Education
+                                    </p>
+                                </div>
+                                <!-- Component 4 -->
+                                <div
+                                    class="industry_component_07 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Real Estate
+                                    </p>
+                                </div>
+                                <!-- Component 5 -->
+                                <div
+                                    class="industry_component_08 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        Public Service Agencies
+                                    </p>
+                                </div>
+                                <!-- Component 6 -->
+                                <div
+                                    class="industry_component_09 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
+                                >
+                                    <img
+                                        class="h-[8px] w-[8px]"
+                                        src="../assets/section-clientele/dot.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
+                                    >
+                                        NGOs
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Component -->
+                        <div></div>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-5 h-[200px] w-full shrink bg-charHeroSmall bg-contain bg-center bg-no-repeat lg:bottom-0 lg:h-[477px] lg:bg-chartClientTele"
+                ></div>
+            </section>
 
-          <!-- Clientele industry -->
-          <div class="Part_1">
-            <div class="flex flex-col lg:flex-row lg:items-baseline">
-              <!-- Head Title -->
-              <p
-                class="text-center text-[20px] font-semibold leading-[24px] -tracking-[0.4px] text-[#E7EEF2] lg:w-1/2 lg:text-left lg:text-[48px] lg:leading-[57.6px] lg:-tracking-[0.96px]"
-              >
-                Our primary sectors in which we have
-                <br class="hidden lg:block" />
-                <span class="deep-focus-gradient">deep focus</span>
-                and stellar track records
-              </p>
-              <div
-                class="industry_section_01 mt-[32px] flex w-full flex-col gap-3 lg:w-1/2"
-              >
-                <!-- Component 1 -->
-                <div
-                  class="industry-component-01 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Industrial Applications & Manufacturing
-                  </p>
-                </div>
-                <!-- Component 2 -->
-                <div
-                  class="industry_component_02 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Aviation & Marine
-                  </p>
-                </div>
-                <!-- Component 3 -->
-                <div
-                  class="industry_component_03 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Automotive & Transport
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Component -->
-            <div></div>
-          </div>
-          <div class="Part_2 mt-[80px]">
-            <div class="mx-auto flex flex-col items-center lg:w-[747px]">
-              <!-- Head Title -->
-              <p
-                class="text-[20px] font-semibold leading-[24px] -tracking-[0.4px] text-[#E7EEF2] lg:w-full lg:text-center lg:text-[48px] lg:leading-[57.6px] lg:-tracking-[0.96px]"
-              >
-                Other sectors in which we have also
-                <span class="delivered-result-gradient">delivered results</span>
-              </p>
-              <div class="mt-[32px] flex w-full flex-col gap-3 lg:w-full">
-                <!-- Component 1 -->
-                <div
-                  class="industry_component_04 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Medical & Pharma
-                  </p>
-                </div>
-                <!-- Component 2 -->
-                <div
-                  class="industry_component_05 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Tech and Media
-                  </p>
-                </div>
-                <!-- Component 3 -->
-                <div
-                  class="industry_component_06 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Education
-                  </p>
-                </div>
-                <!-- Component 4 -->
-                <div
-                  class="industry_component_07 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Real Estate
-                  </p>
-                </div>
-                <!-- Component 5 -->
-                <div
-                  class="industry_component_08 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    Public Service Agencies
-                  </p>
-                </div>
-                <!-- Component 6 -->
-                <div
-                  class="industry_component_09 flex h-[62px] items-center gap-3 rounded-xl border-[1px] border-[#29404A] bg-[#b2bdc10f] p-4"
-                >
-                  <img
-                    class="h-[8px] w-[8px]"
-                    src="../assets/section-clientele/dot.png"
-                    alt=""
-                  />
-                  <p
-                    class="text-[16px] font-normal leading-[30px] -tracking-[0.32px] text-white lg:text-[20px]"
-                  >
-                    NGOs
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Component -->
-            <div></div>
-          </div>
-        </div>
-        <div
-          class="absolute bottom-5 h-[200px] w-full shrink bg-charHeroSmall bg-contain bg-center bg-no-repeat lg:bottom-0 lg:h-[477px] lg:bg-chartClientTele"
-        ></div>
-      </section>
+            <!-- Section: Who we are -->
+            <section class="whowerare z-10 h-[189px] bg-[#005368] lg:h-[489px]">
+                <div class="container mx-auto h-full lg:p-0">
+                    <!-- Wrap Title & Button -->
+                    <div
+                        class="relative flex h-full w-full items-center justify-between"
+                    >
+                        <!-- Wrap Title & Button -->
+                        <div
+                            class="flex w-[263px] flex-col items-start gap-6 lg:w-[746px] lg:gap-10"
+                        >
+                            <p
+                                class="text-[16px] font-normal leading-[19px] -tracking-[0.32px] text-white lg:text-[32px] lg:leading-[50px] lg:-tracking-[0.84px]"
+                            >
+                                We have worked successfully in these industries,
+                                providing them with relevant solutions.
+                            </p>
+                            <button
+                                id="contact-us-2"
+                                class="flex h-[48px] w-[160px] items-center justify-center gap-3 rounded-md bg-white text-[16px] font-semibold lg:h-[56px] lg:w-auto lg:p-[32px]"
+                            >
+                                Contact us
+                                <img
+                                    src="../assets/section-whoweare/arrow-right.png"
+                                    class="h-[24px] w-[24px]"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
 
-      <!-- Section: Who we are -->
-      <section class="whowerare z-10 h-[189px] bg-[#005368] lg:h-[489px]">
-        <div class="container mx-auto h-full lg:p-0">
-          <!-- Wrap Title & Button -->
-          <div class="relative flex h-full w-full items-center justify-between">
-            <!-- Wrap Title & Button -->
-            <div
-              class="flex w-[263px] flex-col items-start gap-6 lg:w-[746px] lg:gap-10"
-            >
-              <p
-                class="text-[16px] font-normal leading-[19px] -tracking-[0.32px] text-white lg:text-[32px] lg:leading-[50px] lg:-tracking-[0.84px]"
-              >
-                We have worked successfully in these industries, providing them
-                with relevant solutions.
-              </p>
-              <button
-                id="contact-us-2"
-                class="flex h-[48px] w-[160px] items-center justify-center gap-3 rounded-md bg-white text-[16px] font-semibold lg:h-[56px] lg:w-auto lg:p-[32px]"
-              >
-                Contact us
-                <img
-                  src="../assets/section-whoweare/arrow-right.png"
-                  class="h-[24px] w-[24px]"
-                  alt=""
-                />
-              </button>
-            </div>
+                        <!-- Global Image -->
+                        <div
+                            class="absolute bottom-4 right-0 flex h-[116px] w-[125px] flex-col justify-center lg:bottom-16 lg:h-[346px] lg:w-[374px]"
+                        >
+                            <img
+                                class="absolute h-[116px] w-[125px] lg:h-full lg:w-full"
+                                src="../assets/section-whoweare/global-asialeap.png"
+                                alt=""
+                            />
+                            <img
+                                class="hidden lg:absolute lg:block lg:h-[108px] lg:w-[373px]"
+                                src="../assets/section-whoweare/inside-global.png"
+                                alt=""
+                            />
+                            <img
+                                class="absolute h-[29px] w-[162px] lg:hidden"
+                                src="../assets/section-whoweare/inside-global2.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Who we are : Character -->
 
-            <!-- Global Image -->
-            <div
-              class="absolute bottom-4 right-0 flex h-[116px] w-[125px] flex-col justify-center lg:bottom-16 lg:h-[346px] lg:w-[374px]"
-            >
-              <img
-                class="absolute h-[116px] w-[125px] lg:h-full lg:w-full"
-                src="../assets/section-whoweare/global-asialeap.png"
-                alt=""
-              />
-              <img
-                class="hidden lg:absolute lg:block lg:h-[108px] lg:w-[373px]"
-                src="../assets/section-whoweare/inside-global.png"
-                alt=""
-              />
-              <img
-                class="absolute h-[29px] w-[162px] lg:hidden"
-                src="../assets/section-whoweare/inside-global2.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section: Who we are : Character -->
+            <section class="section whoweare">
+                <div class="container mx-auto mb-10 lg:mb-0 lg:p-0">
+                    <!-- Title -->
+                    <div
+                        class="mb-[40px] mt-[40px] flex flex-col items-center justify-center gap-3 xl:mb-[60px] xl:mt-[80px] xl:gap-5"
+                    >
+                        <img
+                            src="../assets/section-whyus/dot.png"
+                            class="h-[17px] w-[17px]"
+                            alt=""
+                        />
+                        <h2
+                            class="text-[16px] font-semibold uppercase xl:text-[28px]"
+                        >
+                            Who we are
+                        </h2>
+                    </div>
 
-      <section class="section whoweare">
-        <div class="container mx-auto mb-10 lg:mb-0 lg:p-0">
-          <!-- Title -->
-          <div
-            class="mb-[40px] mt-[40px] flex flex-col items-center justify-center gap-3 xl:mb-[60px] xl:mt-[80px] xl:gap-5"
-          >
-            <img
-              src="../assets/section-whyus/dot.png"
-              class="h-[17px] w-[17px]"
-              alt=""
-            />
-            <h2 class="text-[16px] font-semibold uppercase xl:text-[28px]">
-              Who we are
-            </h2>
-          </div>
-
-          <!-- Wrap Image & Description -->
-          <div
-            class="flex w-full flex-col items-center gap-[25px] lg:flex-shrink-0 lg:flex-row lg:items-start lg:gap-[87px] lg:pb-14"
-          >
-            <!-- Wrap Image -->
-            <div
-              class="relative flex h-[410px] w-[350px] rounded-xl bg-[#86A2B0] lg:h-[584px] lg:w-[475px]"
-            >
-              <img
-                class="lg:h-[558px] lg:w-[462px]"
-                src="../assets/section-whoweare/alexchow.png"
-                alt=""
-              />
-              <!-- <img
+                    <!-- Wrap Image & Description -->
+                    <div
+                        class="flex w-full flex-col items-center gap-[25px] lg:flex-shrink-0 lg:flex-row lg:items-start lg:gap-[87px] lg:pb-14"
+                    >
+                        <!-- Wrap Image -->
+                        <div
+                            class="relative flex h-[410px] w-[350px] rounded-xl bg-[#86A2B0] lg:h-[584px] lg:w-[475px]"
+                        >
+                            <img
+                                class="lg:h-[558px] lg:w-[462px]"
+                                src="../assets/section-whoweare/alexchow.png"
+                                alt=""
+                            />
+                            <!-- <img
                 class="profit_growth lg:absolute lg:-bottom-32 lg:-right-[80px] lg:block lg:h-[310px] lg:w-[286px]"
                 src="assets/section-whoweare/profitGrowth.png"
                 alt=""
               /> -->
-            </div>
-            <!-- Wrap Description -->
-            <div
-              class="relative flex w-[350px] flex-col items-start gap-3 lg:w-[560px] lg:gap-10"
-            >
-              <img
-                src="../assets/section-whoweare/chart-bar.png"
-                class="h-7 w-7"
-                alt="Alex Chow"
-              />
-              <div
-                class="flex flex-col items-start gap-3 self-stretch lg:gap-5"
-              >
-                <!-- FullName -->
-                <p
-                  class="text-[16px] font-semibold capitalize leading-[27px] text-[#011c28] lg:text-[24px]"
-                >
-                  Alex Chow - Founder
-                </p>
-                <!-- Description -->
-                <p
-                  class="text-[16px] font-light leading-6 lg:text-[20px] lg:leading-7"
-                >
-                  Asia Leap was incepted in 2006 in Singapore with the vision of
-                  a group of professional experts who are culturally effective
-                  in Asia Pacific, to be advising and facilitating organizations
-                  to growth and performance in this region.
-                </p>
-                <p
-                  class="text-[16px] font-light leading-6 lg:text-[20px] lg:leading-7"
-                >
-                  With deep expertise in key fields and functions, our
-                  professionals bring fresh insights and skills into business
-                  opportunities and challenges to yield positive turnaround and
-                  impact.
-                </p>
-                <p
-                  class="text-[16px] font-light leading-6 lg:text-[20px] lg:leading-7"
-                >
-                  For close to 2 decades, Asia Leap has assisted organizations
-                  across industries in the region to address their unique
-                  challenges and forge positive results.
-                </p>
-                <img
-                  class="absolute xl:-bottom-[180px] lg:-bottom-[120px] bottom-0 hidden lg:block"
-                  src="../assets/section-whoweare/half-global.png"
-                  alt=""
-                />
-              </div>
-              <img
-                class="absolute -bottom-[20px] -right-[19px] h-[171px] w-[185] opacity-30 lg:hidden"
-                src="../assets/section-whoweare/global-asialeap.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+                        </div>
+                        <!-- Wrap Description -->
+                        <div
+                            class="relative flex w-[350px] flex-col items-start gap-3 lg:w-[560px] lg:gap-10"
+                        >
+                            <img
+                                src="../assets/section-whoweare/chart-bar.png"
+                                class="h-7 w-7"
+                                alt="Alex Chow"
+                            />
+                            <div
+                                class="flex flex-col items-start gap-3 self-stretch lg:gap-5"
+                            >
+                                <!-- FullName -->
+                                <p
+                                    class="text-[16px] font-semibold capitalize leading-[27px] text-[#011c28] lg:text-[24px]"
+                                >
+                                    Alex Chow - Founder
+                                </p>
+                                <!-- Description -->
+                                <p
+                                    class="text-[16px] font-light leading-6 lg:text-[20px] lg:leading-7"
+                                >
+                                    Asia Leap was incepted in 2006 in Singapore
+                                    with the vision of a group of professional
+                                    experts who are culturally effective in Asia
+                                    Pacific, to be advising and facilitating
+                                    organizations to growth and performance in
+                                    this region.
+                                </p>
+                                <p
+                                    class="text-[16px] font-light leading-6 lg:text-[20px] lg:leading-7"
+                                >
+                                    With deep expertise in key fields and
+                                    functions, our professionals bring fresh
+                                    insights and skills into business
+                                    opportunities and challenges to yield
+                                    positive turnaround and impact.
+                                </p>
+                                <p
+                                    class="text-[16px] font-light leading-6 lg:text-[20px] lg:leading-7"
+                                >
+                                    For close to 2 decades, Asia Leap has
+                                    assisted organizations across industries in
+                                    the region to address their unique
+                                    challenges and forge positive results.
+                                </p>
+                                <img
+                                    class="absolute xl:-bottom-[180px] lg:-bottom-[120px] bottom-0 hidden lg:block"
+                                    src="../assets/section-whoweare/half-global.png"
+                                    alt=""
+                                />
+                            </div>
+                            <img
+                                class="absolute -bottom-[20px] -right-[19px] h-[171px] w-[185] opacity-30 lg:hidden"
+                                src="../assets/section-whoweare/global-asialeap.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Section: Value -->
-      <section class="value h-auto bg-[#011C28] lg:bg-value">
-        <div class="container mx-auto h-full py-[40px] lg:p-0 lg:py-[80px]">
-          <!-- Title -->
-          <div
-            class="mb-[40px] flex flex-col items-center justify-center gap-3 xl:gap-5"
-          >
-            <img
-              src="../assets/section-clientele/dot-light.png"
-              class="h-[17px] w-[17px]"
-              alt=""
-            />
-            <h2
-              class="text-[16px] font-semibold uppercase text-white xl:text-[28px]"
-            >
-              values
-            </h2>
-          </div>
-
-          <!-- Head Title -->
-          <div class="mx-auto mb-[40px] w-[351px] lg:w-[895px]">
-            <p
-              class="text-center text-[20px] font-semibold capitalize leading-7 -tracking-[0.4px] text-white lg:hidden lg:text-[40px] lg:font-semibold lg:leading-[56px] lg:-tracking-[0.8px]"
-            >
-              The values of Asia Leap drives our team’s commitment to perform
-              and create
-              <span class="positive-value-gradient">positive value</span>
-            </p>
-            <p
-              class="title-value-gradient hidden text-center text-[20px] font-semibold capitalize leading-7 -tracking-[0.4px] text-white lg:block lg:text-[40px] lg:font-semibold lg:leading-[56px] lg:-tracking-[0.8px]"
-            >
-              What drives our team's commitment to performance and value
-              creation?
-            </p>
-          </div>
-
-          <div
-            class="grid grid-cols-1 items-center gap-[12px] md:grid-cols-2 md:gap-[16px]"
-          >
-            <!-- Component 1 -->
-            <div
-              class="values_component_01 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[360px] lg:gap-7"
-            >
-              <!-- No -->
-              <p
-                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
-              >
-                01
-              </p>
-              <!-- Description -->
-              <div class="flex flex-col items-start gap-3 self-stretch">
-                <p
-                  class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
-                >
-                  Long-term Partnership
-                </p>
-                <p
-                  class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
-                >
-                  We stand for sincere and enduring partnerships founded on
-                  mutual trust and respect. Across successive generations, we
-                  love to play a part in every milestone that our clients
-                  achieve.
-                </p>
-              </div>
-            </div>
-
-            <!-- Component 2 -->
-            <div
-              class="values_component_02 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[360px] lg:gap-7"
-            >
-              <!-- No -->
-              <p
-                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
-              >
-                02
-              </p>
-              <!-- Description -->
-              <div class="flex flex-col items-start gap-3 self-stretch">
-                <p
-                  class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
-                >
-                  Attitude of Contribution
-                </p>
-                <p
-                  class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
-                >
-                  We value positive contribution to our clients, partners and
-                  the community. We adopt the “pay it forward” and “ethical
-                  development” approaches to businesses.
-                </p>
-              </div>
-            </div>
-            <!-- Component 3 -->
-            <div
-              class="values_component_03 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[390px] lg:gap-7"
-            >
-              <!-- No -->
-              <p
-                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
-              >
-                03
-              </p>
-              <!-- Description -->
-              <div class="flex flex-col items-start gap-3 self-stretch">
-                <p
-                  class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
-                >
-                  Potential unlocking
-                </p>
-                <p
-                  class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
-                >
-                  We believe in discovering, appreciating and building on the
-                  unique talents and gifts of individuals and teams. We nurture
-                  potential and strengthen people and processes to bring about
-                  organizational growth
-                </p>
-              </div>
-            </div>
-            <!-- Component 4 -->
-            <div
-              class="values_component_04 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[390px] lg:gap-7"
-            >
-              <!-- No -->
-              <p
-                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
-              >
-                04
-              </p>
-              <!-- Description -->
-              <div class="flex flex-col items-start gap-3 self-stretch">
-                <p
-                  class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
-                >
-                  Eyes and Ears Locally
-                </p>
-                <p
-                  class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
-                >
-                  We are your trusted local business insiders in Asia Pacific.
-                  With an experienced team of experts spanning across major
-                  cities in this region, we bring you geographical and cultural
-                  insights that render the best organizational perspective to
-                  your business.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: Testimonials -->
-      <section class="testimonials" id="">
-        <div class="container mx-auto mb-[40px] h-full lg:p-0">
-          <!-- Title -->
-          <div
-            class="mb-[40px] mt-[40px] flex flex-col items-center justify-center gap-3 xl:mb-[60px] xl:mt-[40px] xl:gap-5"
-          >
-            <img
-              src="../assets/section-whyus/dot.png"
-              class="h-[17px] w-[17px]"
-              alt=""
-            />
-            <h2 class="text-[16px] font-semibold uppercase xl:text-[28px]">
-              testimonials
-            </h2>
-          </div>
-          <div class="swiper swiper3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+            <!-- Section: Value -->
+            <section class="value h-auto bg-[#011C28] lg:bg-value">
                 <div
-                  class="relative mx-auto flex w-[350px] flex-col items-center gap-6 rounded-2xl bg-white px-6 py-8 lg:mb-[40px] lg:w-full lg:gap-6 lg:px-10 lg:py-8"
+                    class="container mx-auto h-full py-[40px] lg:p-0 lg:py-[80px]"
                 >
-                  <img
-                    class="absolute top-0 h-[4px] w-[131px]"
-                    src="../assets/section-testimonials/rectangle.png"
-                    alt=""
-                  />
-                  <p
-                    class="self-stretch text-[16px] font-light leading-[24px] text-black lg:text-xl lg:font-light"
-                  >
-                    “During the current times when the need for highly talented
-                    people is driven by cultural diversity, technology change,
-                    high risk and growth, it is of utmost importance to have a
-                    recruiting partner who not only understands the dynamics of
-                    the region, but also has a deep understanding of the
-                    cultural differences – or better how to bridge those – and
-                    brings the necessary relationships and networking with the
-                    talents in the region.
-                  </p>
-                  <p
-                    class="self-stretch text-[16px] lg:max-w-[800px] font-light leading-[24px] text-black lg:text-xl lg:font-light"
-                  >
-                    Through your dedicated work we have been able to hire a few
-                    core staff who will be bringing the right mindset,
-                    professional experience and drive in order for our
-                    organization to achieve the next level of quality our
-                    customers expect.”
-                  </p>
-                  <div
-                    class="flex items-center justify-center lg:w-full lg:justify-between"
-                  >
-                    <p
-                      class="text-sm leading-6 text-[#00000099] lg:font-normal lg:w-[591px] lg:text-lg"
+                    <!-- Title -->
+                    <div
+                        class="mb-[40px] flex flex-col items-center justify-center gap-3 xl:gap-5"
                     >
-                      Head of Sales Region APAC, Vice-President, Global Sales
-                      and Service Mitsui-Kulzer GmbH
-                    </p>
-                    <img
-                      src="../assets/section-testimonials/quotes.png"
-                      alt=""
-                      class="h-[64px] w-[64px]"
-                    />
-                  </div>
+                        <img
+                            src="../assets/section-clientele/dot-light.png"
+                            class="h-[17px] w-[17px]"
+                            alt=""
+                        />
+                        <h2
+                            class="text-[16px] font-semibold uppercase text-white xl:text-[28px]"
+                        >
+                            values
+                        </h2>
+                    </div>
+
+                    <!-- Head Title -->
+                    <div class="mx-auto mb-[40px] w-[351px] lg:w-[895px]">
+                        <p
+                            class="text-center text-[20px] font-semibold capitalize leading-7 -tracking-[0.4px] text-white lg:hidden lg:text-[40px] lg:font-semibold lg:leading-[56px] lg:-tracking-[0.8px]"
+                        >
+                            The values of Asia Leap drives our team’s commitment
+                            to perform and create
+                            <span class="positive-value-gradient"
+                                >positive value</span
+                            >
+                        </p>
+                        <p
+                            class="title-value-gradient hidden text-center text-[20px] font-semibold capitalize leading-7 -tracking-[0.4px] text-white lg:block lg:text-[40px] lg:font-semibold lg:leading-[56px] lg:-tracking-[0.8px]"
+                        >
+                            What drives our team's commitment to performance and
+                            value creation?
+                        </p>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 items-center gap-[12px] md:grid-cols-2 md:gap-[16px]"
+                    >
+                        <!-- Component 1 -->
+                        <div
+                            class="values_component_01 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[360px] lg:gap-7"
+                        >
+                            <!-- No -->
+                            <p
+                                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
+                            >
+                                01
+                            </p>
+                            <!-- Description -->
+                            <div
+                                class="flex flex-col items-start gap-3 self-stretch"
+                            >
+                                <p
+                                    class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
+                                >
+                                    Long-term Partnership
+                                </p>
+                                <p
+                                    class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
+                                >
+                                    We stand for sincere and enduring
+                                    partnerships founded on mutual trust and
+                                    respect. Across successive generations, we
+                                    love to play a part in every milestone that
+                                    our clients achieve.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Component 2 -->
+                        <div
+                            class="values_component_02 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[360px] lg:gap-7"
+                        >
+                            <!-- No -->
+                            <p
+                                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
+                            >
+                                02
+                            </p>
+                            <!-- Description -->
+                            <div
+                                class="flex flex-col items-start gap-3 self-stretch"
+                            >
+                                <p
+                                    class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
+                                >
+                                    Attitude of Contribution
+                                </p>
+                                <p
+                                    class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
+                                >
+                                    We value positive contribution to our
+                                    clients, partners and the community. We
+                                    adopt the “pay it forward” and “ethical
+                                    development” approaches to businesses.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Component 3 -->
+                        <div
+                            class="values_component_03 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[390px] lg:gap-7"
+                        >
+                            <!-- No -->
+                            <p
+                                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
+                            >
+                                03
+                            </p>
+                            <!-- Description -->
+                            <div
+                                class="flex flex-col items-start gap-3 self-stretch"
+                            >
+                                <p
+                                    class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
+                                >
+                                    Potential unlocking
+                                </p>
+                                <p
+                                    class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
+                                >
+                                    We believe in discovering, appreciating and
+                                    building on the unique talents and gifts of
+                                    individuals and teams. We nurture potential
+                                    and strengthen people and processes to bring
+                                    about organizational growth
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Component 4 -->
+                        <div
+                            class="values_component_04 component-value flex h-[327px] w-full flex-col items-start justify-start gap-6 rounded-xl p-8 lg:h-[390px] lg:gap-7"
+                        >
+                            <!-- No -->
+                            <p
+                                class="text-[40px] font-bold leading-[56px] -tracking-[1.6px] text-white lg:text-[80px] lg:font-semibold lg:leading-[86px] lg:-tracking-[3.2px]"
+                            >
+                                04
+                            </p>
+                            <!-- Description -->
+                            <div
+                                class="flex flex-col items-start gap-3 self-stretch"
+                            >
+                                <p
+                                    class="text-[16px] font-medium leading-6 text-[#E7EEF2] lg:text-[28px] lg:font-semibold lg:leading-normal"
+                                >
+                                    Eyes and Ears Locally
+                                </p>
+                                <p
+                                    class="text-sm font-normal leading-[21px] text-[#E7EEF2] lg:text-[18px] lg:leading-[30px]"
+                                >
+                                    We are your trusted local business insiders
+                                    in Asia Pacific. With an experienced team of
+                                    experts spanning across major cities in this
+                                    region, we bring you geographical and
+                                    cultural insights that render the best
+                                    organizational perspective to your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+            </section>
+
+            <!-- Section: Testimonials -->
+            <section class="testimonials" id="">
+                <div class="container mx-auto mb-[40px] h-full lg:p-0">
+                    <!-- Title -->
+                    <div
+                        class="mb-[40px] mt-[40px] flex flex-col items-center justify-center gap-3 xl:mb-[60px] xl:mt-[40px] xl:gap-5"
+                    >
+                        <img
+                            src="../assets/section-whyus/dot.png"
+                            class="h-[17px] w-[17px]"
+                            alt=""
+                        />
+                        <h2
+                            class="text-[16px] font-semibold uppercase xl:text-[28px]"
+                        >
+                            testimonials
+                        </h2>
+                    </div>
+                    <div class="swiper swiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div
+                                    class="relative mx-auto flex w-[350px] flex-col items-center gap-6 rounded-2xl bg-white px-6 py-8 lg:mb-[40px] lg:w-full lg:gap-6 lg:px-10 lg:py-8"
+                                >
+                                    <img
+                                        class="absolute top-0 h-[4px] w-[131px]"
+                                        src="../assets/section-testimonials/rectangle.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="self-stretch text-[16px] font-light leading-[24px] text-black lg:text-xl lg:font-light"
+                                    >
+                                        “During the current times when the need
+                                        for highly talented people is driven by
+                                        cultural diversity, technology change,
+                                        high risk and growth, it is of utmost
+                                        importance to have a recruiting partner
+                                        who not only understands the dynamics of
+                                        the region, but also has a deep
+                                        understanding of the cultural
+                                        differences – or better how to bridge
+                                        those – and brings the necessary
+                                        relationships and networking with the
+                                        talents in the region.
+                                    </p>
+                                    <p
+                                        class="self-stretch text-[16px] lg:max-w-[800px] font-light leading-[24px] text-black lg:text-xl lg:font-light"
+                                    >
+                                        Through your dedicated work we have been
+                                        able to hire a few core staff who will
+                                        be bringing the right mindset,
+                                        professional experience and drive in
+                                        order for our organization to achieve
+                                        the next level of quality our customers
+                                        expect.”
+                                    </p>
+                                    <div
+                                        class="flex items-center justify-center lg:w-full lg:justify-between"
+                                    >
+                                        <p
+                                            class="text-sm leading-6 text-[#00000099] lg:font-normal lg:w-[591px] lg:text-lg"
+                                        >
+                                            Head of Sales Region APAC,
+                                            Vice-President, Global Sales and
+                                            Service Mitsui-Kulzer GmbH
+                                        </p>
+                                        <img
+                                            src="../assets/section-testimonials/quotes.png"
+                                            alt=""
+                                            class="h-[64px] w-[64px]"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="relative mx-auto flex w-[350px] flex-col items-center gap-6 rounded-2xl bg-white px-6 py-8 lg:mb-[40px] lg:w-full lg:gap-6 lg:px-10 lg:py-8"
+                                >
+                                    <img
+                                        class="absolute top-0 h-[4px] w-[131px]"
+                                        src="../assets/section-testimonials/rectangle.png"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="self-stretch text-[16px] font-light leading-[24px] text-black lg:text-xl lg:font-light"
+                                    >
+                                        "City Super Shanghai has cooperated with
+                                        Asia Leap since 2014. We're deeply
+                                        impressed by their professionalism and
+                                        customer-orientated services. The
+                                        Leadership and Supervisory programs are
+                                        tailor-made for our company's situation
+                                        and the use of Action Learning method
+                                        enables trainees to apply knowledge and
+                                        skills to work,which maximizes the
+                                        effectiveness of training..."
+                                    </p>
+                                    <div
+                                        class="flex items-center justify-center lg:w-full lg:justify-between"
+                                    >
+                                        <p
+                                            class="text-sm leading-6 text-[#00000099] lg:w-[276px] lg:text-lg"
+                                        >
+                                            Manager, Learning Development City
+                                            Super Shanghai Ltd
+                                        </p>
+                                        <img
+                                            src="../assets/section-testimonials/quotes.png"
+                                            alt=""
+                                            class="h-[64px] w-[64px]"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Component  -->
+
+                    <div
+                        class="w-full flex items-center justify-center lg:gap-4 gap-2 sm:mt-[10px] lg:mt-7"
+                    >
+                        <img
+                            id="next-button-testimonial"
+                            src="../assets/section-whyus/prev.png"
+                            class="z-10 h-[48px] w-[48px] cursor-pointer"
+                            alt=""
+                        />
+                        <img
+                            id="prev-button-testimonial"
+                            src="../assets/section-whyus/next.png"
+                            class="z-10 h-[48px] w-[48px] cursor-pointer"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Article & Events -->
+            <section
+                class="article_event bg-backgroundArticle bg-cover"
+                id="article_event"
+            >
                 <div
-                  class="relative mx-auto flex w-[350px] flex-col items-center gap-6 rounded-2xl bg-white px-6 py-8 lg:mb-[40px] lg:w-full lg:gap-6 lg:px-10 lg:py-8"
+                    class="container flex mx-auto items-center justify-center h-[452px]"
                 >
-                  <img
-                    class="absolute top-0 h-[4px] w-[131px]"
-                    src="../assets/section-testimonials/rectangle.png"
-                    alt=""
-                  />
-                  <p
-                    class="self-stretch text-[16px] font-light leading-[24px] text-black lg:text-xl lg:font-light"
-                  >
-                    "City Super Shanghai has cooperated with Asia Leap since
-                    2014. We're deeply impressed by their professionalism and
-                    customer-orientated services. The Leadership and Supervisory
-                    programs are tailor-made for our company's situation and the
-                    use of Action Learning method enables trainees to apply
-                    knowledge and skills to work,which maximizes the
-                    effectiveness of training..."
-                  </p>
-                  <div
-                    class="flex items-center justify-center lg:w-full lg:justify-between"
-                  >
-                    <p
-                      class="text-sm leading-6 text-[#00000099] lg:w-[276px] lg:text-lg"
+                    <!-- Component -->
+                    <div
+                        class="flex flex-col items-center gap-3 lg:mb-[60px] lg:mt-[40px] lg:gap-10"
                     >
-                      Manager, Learning Development City Super Shanghai Ltd
-                    </p>
-                    <img
-                      src="../assets/section-testimonials/quotes.png"
-                      alt=""
-                      class="h-[64px] w-[64px]"
-                    />
-                  </div>
+                        <div>
+                            <img
+                                src="../assets/section-articleevent/dotlight.png"
+                                class="h-[17px] w-[17px] mx-auto xl:mb-5"
+                                alt=""
+                            />
+                            <h2
+                                class="text-[36px] text-white font-semibold capitalize lg:text-[48px]"
+                            >
+                                Articles & Events
+                            </h2>
+                        </div>
+                        <div
+                            linkto
+                            class="px-8 h-[56px] text-primary bg-white gap-2 cursor-pointer z-10 rounded-md font-semibold border text-base flex items-center justify-center"
+                        >
+                            View on Linkedin
+                            <img
+                                src="../assets/section-articleevent/arrow.png"
+                                width="18"
+                                height="18"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <!-- end Component -->
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- Component  -->
+            </section>
 
-          <div
-            class="w-full flex items-center justify-center lg:gap-4 gap-2 sm:mt-[10px] lg:mt-7"
-          >
-            <img
-              id="next-button-testimonial"
-              src="../assets/section-whyus/prev.png"
-              class="z-10 h-[48px] w-[48px] cursor-pointer"
-              alt=""
-            />
-            <img
-              id="prev-button-testimonial"
-              src="../assets/section-whyus/next.png"
-              class="z-10 h-[48px] w-[48px] cursor-pointer"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: Article & Events -->
-      <section
-        class="article_event bg-backgroundArticle bg-cover"
-        id="article_event"
-      >
-        <div
-          class="container flex mx-auto items-center justify-center h-[452px]"
-        >
-          <!-- Component -->
-          <div
-            class="flex flex-col items-center gap-3 lg:mb-[60px] lg:mt-[40px] lg:gap-10"
-          >
-            <div>
-              <img
-                src="../assets/section-articleevent/dotlight.png"
-                class="h-[17px] w-[17px] mx-auto xl:mb-5"
-                alt=""
-              />
-              <h2
-                class="text-[36px] text-white font-semibold capitalize lg:text-[48px]"
-              >
-                Articles & Events
-              </h2>
-            </div>
-            <div
-              linkto
-              class="px-8 h-[56px] text-primary bg-white gap-2 cursor-pointer z-10 rounded-md font-semibold border text-base flex items-center justify-center"
+            <!-- Footer -->
+            <footer
+                class="relative h-auto bg-[#011C28] bg-backgroundFooter bg-center bg-no-repeat lg:bg-backgroundFooter2"
             >
-              View on Linkedin
-              <img
-                src="../assets/section-articleevent/arrow.png"
-                width="18"
-                height="18"
-                alt=""
-              />
-            </div>
-          </div>
-          <!-- end Component -->
-        </div>
-      </section>
+                <!-- Grid -->
 
-      <!-- Footer -->
-      <footer
-        class="relative h-auto bg-[#011C28] bg-backgroundFooter bg-center bg-no-repeat lg:bg-backgroundFooter2"
-      >
-        <!-- Grid -->
+                <div class="container mx-auto">
+                    <!-- Wrap Footer -->
+                    <div
+                        class="mx-auto flex w-[263px] flex-col items-center gap-[19px] lg:w-full lg:gap-[84px]"
+                    >
+                        <!-- Wrap Logo -->
+                        <div
+                            class="mt-[20px] flex flex-col items-center gap-2 lg:mt-[48px]"
+                        >
+                            <img
+                                class="h-[30px] w-[33px] lg:h-[61px] lg:w-[66px]"
+                                src="../assets/footer/global.png"
+                                alt=""
+                            />
+                            <img
+                                class="h-[15px] w-[107px] lg:h-[30px] lg:w-[212px]"
+                                src="../assets/footer/global-bottom.png"
+                                alt=""
+                            />
+                        </div>
+                        <!-- Connect us -->
+                        <div
+                            class="mb-[20px] flex w-full flex-col items-center gap-6 lg:mb-[151px] lg:gap-10"
+                        >
+                            <p
+                                class="text-xl font-semibold leading-[24px] -tracking-[-1px] text-white lg:text-[48px]"
+                            >
+                                Connect with us
+                            </p>
+                            <p
+                                class="text-xs font-normal text-white lg:text-lg"
+                            >
+                                EA Licence 24S2360
+                            </p>
+                            <div
+                                class="flex w-full flex-col gap-3 lg:flex-row lg:justify-between"
+                            >
+                                <!-- Link 1 -->
+                                <div class="flex items-center gap-[14px]">
+                                    <img
+                                        src="../assets/footer/linked-icon.png"
+                                        class="h-[44px] w-[44px]"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-sm font-light text-[#E7EEF2] lg:text-[16px]"
+                                    >
+                                        Asia Leap
+                                    </p>
+                                </div>
+                                <!-- Link 2 -->
+                                <div class="flex items-center gap-[14px]">
+                                    <img
+                                        src="../assets/footer/mail-icon.png"
+                                        class="h-[44px] w-[44px]"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-sm font-light text-[#E7EEF2] lg:text-[16px]"
+                                    >
+                                        projectcentre@asia-leap.com
+                                    </p>
+                                </div>
+                                <!-- Link 3 -->
+                                <div class="flex items-center gap-[14px]">
+                                    <img
+                                        src="../assets/footer/location-icon.png"
+                                        class="h-[44px] w-[44px]"
+                                        alt=""
+                                    />
+                                    <p
+                                        class="text-sm font-light text-[#E7EEF2] lg:w-[365px] lg:text-[16px]"
+                                    >
+                                        60 Paya Lebar Road, #06-33 Paya Lebar
+                                        Square Singapore 409051
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Temporary div -->
+        </main>
 
-        <div class="container mx-auto">
-          <!-- Wrap Footer -->
-          <div
-            class="mx-auto flex w-[263px] flex-col items-center gap-[19px] lg:w-full lg:gap-[84px]"
-          >
-            <!-- Wrap Logo -->
-            <div
-              class="mt-[20px] flex flex-col items-center gap-2 lg:mt-[48px]"
-            >
-              <img
-                class="h-[30px] w-[33px] lg:h-[61px] lg:w-[66px]"
-                src="../assets/footer/global.png"
-                alt=""
-              />
-              <img
-                class="h-[15px] w-[107px] lg:h-[30px] lg:w-[212px]"
-                src="../assets/footer/global-bottom.png"
-                alt=""
-              />
-            </div>
-            <!-- Connect us -->
-            <div
-              class="mb-[20px] flex w-full flex-col items-center gap-6 lg:mb-[151px] lg:gap-10"
-            >
-              <p
-                class="text-xl font-semibold leading-[24px] -tracking-[-1px] text-white lg:text-[48px]"
-              >
-                Connect with us
-              </p>
-              <div
-                class="flex w-full flex-col gap-3 lg:flex-row lg:justify-between"
-              >
-                <!-- Link 1 -->
-                <div class="flex items-center gap-[14px]">
-                  <img
-                    src="../assets/footer/linked-icon.png"
-                    class="h-[44px] w-[44px]"
-                    alt=""
-                  />
-                  <p class="text-sm font-light text-[#E7EEF2] lg:text-[16px]">
-                    Asia Leap
-                  </p>
-                </div>
-                <!-- Link 2 -->
-                <div class="flex items-center gap-[14px]">
-                  <img
-                    src="../assets/footer/mail-icon.png"
-                    class="h-[44px] w-[44px]"
-                    alt=""
-                  />
-                  <p class="text-sm font-light text-[#E7EEF2] lg:text-[16px]">
-                    projectcentre@asia-leap.com
-                  </p>
-                </div>
-                <!-- Link 3 -->
-                <div class="flex items-center gap-[14px]">
-                  <img
-                    src="../assets/footer/location-icon.png"
-                    class="h-[44px] w-[44px]"
-                    alt=""
-                  />
-                  <p
-                    class="text-sm font-light text-[#E7EEF2] lg:w-[365px] lg:text-[16px]"
-                  >
-                    60 Paya Lebar Road, #06-33 Paya Lebar Square Singapore
-                    409051
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- Temporary div -->
-    </main>
-
-    <script src="../js/splide.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="../js/swiper-bundle.min.js"></script>
-    <!-- Scrollreveal JS -->
-    <script src="../js/scrollreveal.min.js"></script>
-    <!-- Main JS -->
-    <script src="../js/main.js"></script>
-  </body>
+        <script src="../js/splide.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="../js/swiper-bundle.min.js"></script>
+        <!-- Scrollreveal JS -->
+        <script src="../js/scrollreveal.min.js"></script>
+        <!-- Main JS -->
+        <script src="../js/main.js"></script>
+    </body>
 </html>
